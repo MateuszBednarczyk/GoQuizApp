@@ -15,11 +15,17 @@ type Asker interface {
 }
 
 func main() {
-	questions := [...]Question{{content: "How many fingers does human have?", answers: map[int]string{
-		1: "two",
-		2: "five",
-		3: "twenty",
-	}, correctAns: 3}}
+	questions := [...]Question{
+		{content: "How many fingers does human have?", answers: map[int]string{
+			1: "two",
+			2: "five",
+			3: "twenty",
+		}, correctAns: 3},
+		{content: "Is go fun?", answers: map[int]string{
+			1: "no",
+			2: "yes",
+		}, correctAns: 2},
+	}
 
 	for _, q := range questions {
 		fmt.Println(q.content)
