@@ -14,10 +14,6 @@ type Question struct {
 	correctAns int
 }
 
-type Asker interface {
-	ask()
-}
-
 func main() {
 	//QUESTIONS SET
 	questions := [...]Question{
